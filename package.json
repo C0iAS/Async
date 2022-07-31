@@ -1,0 +1,23 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C0iAS/Async.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/C0iAS/Async/issues"
+  },
+  "homepage": "https://github.com/C0iAS/Async#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
