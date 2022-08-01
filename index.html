@@ -6,21 +6,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./assets/main.js"></script>
     <style>
-      body {
-        background-color: aqua;
+      body .relative, body .bg-white{
+        background: #090116;
+      }
+      .bg-gray-50 {
+        background-image: url('https://nftandgamefi.com/wp-content/uploads/2022/06/1649763963_FQFlFybWQAMjTyM.jpg');
+        background-color: #090116;
+        height: 500px;
+      }
+      
+      .bg-gray-50 svg {
+        margin-top: 20px;
       }
       #icon {
         border-radius: 20px;
+
       }
+      .inactive {
+        display: none;
+      }
+      .about {
+        color: gray;
+        padding: 80px 0;
+        margin-left: 80px;
+      }
+      .about h2 {
+        font-size: 24px;
+      }
+      .about p {
+        margin: 10px 150px;
+      }
+      .about p span {
+        color: red;        
+      }
+      .about p a {
+        text-decoration: underline;
+        color: aqua;
+      }
+      .column {
+        flex-direction: column;
+        margin: 0 0 0 0 !important;
+      }
+      .discord {
+        margin-left: 10px;
+      }
+      #darkmode {
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+      }
+      #lightmode {
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+      }
+      body .mode {
+        background-color: rgb(196, 186, 52) !important;
+      }
+      
     </style>
   </head>
 
   <body>
-    <div class="relative bg-white overflow-hidden">
+    <div class="relative bg-white overflow-hidden"> 
+      
       <div class="max-w-7xl mx-auto">
+        
         <div
-          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32" id="fondo"
         >
+        
           <svg
             class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
@@ -28,21 +85,23 @@
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
+            
           </svg>
           <div>
+            
             <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
               <nav
                 class="relative flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global"
               >
+             
                 <div
-                  class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
+                  class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0 icon" 
                 >
                   <div
                     class="flex items-center justify-between w-full md:w-auto"
                   >
-                    <a href="#">
+                    <a href="https://twitter.com/0xCoiasgg21" target="_blank">
                       <span class="sr-only">Title</span>
                       <img
                         class="h-8 w-auto sm:h-10" id="icon"
@@ -50,24 +109,36 @@
                       />
                     </a>
                   </div>
+                  
                 </div>
-                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                
+                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8"> 
                   <a
-                    href="#"
-                    class="font-medium text-gray-500 hover:text-gray-900"
+                    href="#over"
+                    class="font-medium text-gray-500 hover:text-gray-900 inactive" id="home"
+                    >Home
+                  </a>
+                  <a
+                    href="#p2e"
+                    class="font-medium text-gray-500 hover:text-gray-900 boton-about"
                     >About</a
                   >
                   <a
-                    href="#"
+                    href="https://axieinfinity.com/" target="_blank"
                     class="font-medium text-gray-500 hover:text-gray-900"
-                    >Projects</a
+                    >Project</a
                   >
                   <a
-                    href="#"
+                    href="#contact"
                     class="font-medium text-gray-500 hover:text-gray-900"
                     >Contact</a
                   >
+                  <a class="font-medium text-gray-500 hover:text-gray-900" href="https://welcome.skymavis.com/" target="_blank">Ronin</a>
+                  <a class="font-medium text-gray-500 hover:text-gray-900" href="https://marketplace.axieinfinity.com/" target="_blank">MarketPlace</a>
+                  
                 </div>
+                <img src="https://previews.123rf.com/images/alexutemov/alexutemov1606/alexutemov160600137/58834001-vector-del-icono-del-sol-aislado-en-el-fondo-blanco-sol-del-vector-aislado-sol-dise%C3%B1o-de-iconos-de-v.jpg" alt="mode" id="darkmode" class="">
+                <img src="https://i.pinimg.com/474x/64/7d/ca/647dca3789950a2a7117398d0920d10b.jpg" alt="mode" class="inactive" id="lightmode">
               </nav>
             </div>
           </div>
@@ -79,15 +150,16 @@
               <h1
                 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
               >
-                <span class="block xl:inline">Sebastian Pacheco Lopez</span>
+                <span class="block xl:inline">Axie Infinity</span>
                 <span class="block text-indigo-600 xl:inline"
                   >@0xCoiasgg21</span
                 >
               </h1>
+              <h2 class="text-gray-900">By: Sebastian Pacheco</h2>
               <p
                 class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               >
-                Magangué Bolívar
+                Axie infinity, play and earn revolution pioneer. Revolution for gamers and game developers.
               </p>
             </div>
           </main>
@@ -103,34 +175,46 @@
     </div>
     <div class="bg-white">
       <div
-        class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+        class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 videos" id="over"
       >
         <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">
           Last YouTube Videos
         </h2>
+        <a href="https://www.youtube.com/c/OverJean" target="_blank">
         <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
          
           
-        </div>
+        </div></a>
+      </div>
+      <div class="inactive about" id="p2e">
+        <h2>Axie infinity and P2E metaverse</h2>
+        <p>If you play or develop videoGames, this should be intresting for you, maybe you already    know about Blockchain and how we can use this technology on the games industries, giving people the ownership of all their assets in the game.</p>
+
+        <p>Usually people spend years playing videogames and have nothing return, just hours of entertainment, but what if you can trade in a real market with assets you get while playing?, that's what blockchain can do. You can also take advantage on the market movements, there is a lot of videoGames tha includes markets where you can trade with a token game, but this isn't real money, these tokens are centralized, that means they are totally under control. A real economy is what blockchain can provide on this cases, decentralized and conected to real world.</p>
+          
+        <p>Axie infinity is a pioneer videoGame using this technology, it was born on the famous network Ethereum and then migrated to their owns. Ronin network it's Axie infinity's blockchain and it was create to provide developers an enviroment to make this type of video games. Sky Mavis is the company that made all this posible and it only started, what do you think? want to be part on this revolution? you can!, as a gamer or developer.</p>
+          
+        <p><span>ATTENTION: </span> Axie infinity is not my project, this is a fan page and is for educational and informative purposes. Remember, Axie infinity is a game and not an investment, don't play for money, only play if you like the game. If you want to invest, invest on you, subscribe <a href="https://platzi.com/r/sebapl09" target="_blank">Platzi</a> and use mi <a href="https://platzi.com/r/sebapl09" target="_blank">code</a> for a free month ;)
+        </p>
       </div>
     </div>
     <div class="bg-gray-50">
       <div
-        class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between" id="contact"
       >
         <h2
           class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
         >
           <span class="block">Contact</span>
-          <span class="block text-indigo-600">keep in touch.</span>
+          <span class="block text-blue-900">Click on FaceBook, Twitter or Discord.</span>
         </h2>
-        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="mt-8 flex column lg:mt-0 lg:flex-shrink-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="48"
-            height="48"
+            width="100"
+            height="100"
             viewBox="0 0 48 48"
             style="fill: #000000"
           >
@@ -145,6 +229,7 @@
               <stop offset="0" stop-color="#0d61a9"></stop>
               <stop offset="1" stop-color="16528c"></stop>
             </linearGradient>
+            <a href="https://www.facebook.com/AxieInfinity" target="_blank">
             <path
               fill="url(#awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1)"
               d="M42,40c0,1.105-0.895,2-2,2H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32	c1.105,0,2,0.895,2,2V40z"
@@ -160,24 +245,34 @@
             <path
               fill="#fff"
               d="M33.365,16H36v-3.754c-0.492-0.064-1.531-0.203-3.495-0.203c-4.101,0-6.505,2.08-6.505,6.819V22h-4v4	h4v11h5V26h3.938l0.618-4H31v-2.465C31,17.661,31.612,16,33.365,16z"
-            ></path>
+            ></path></a>
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="48"
-            height="48"
+            width="100"
+            height="100"
             viewBox="0 0 48 48"
-            style="fill: #000000"
-          >
+            style="fill: #000000">
+            <a href="https://twitter.com/axieinfinity" target="_blank">
             <path
               fill="#03A9F4"
               d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
-            ></path>
+            ></path></a>
           </svg>
+          <a href="https://welcome.skymavis.com/regional-servers/" target="_blank" class="discord">
+            <svg width="80" height="80" viewBox="0 0 32 32">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#8C9EFF" cx="16" cy="16" r="16"></circle>
+                <path d="M24 10s-2.293-1.795-5-2l-.244.488c2.447.6 3.57 1.457 4.744 2.512-2.023-1.033-4.02-2-7.5-2-3.48 0-5.476.967-7.5 2 1.174-1.055 2.51-2.008 4.744-2.511L13 8c-2.84.268-5 2-5 2s-2.56 3.713-3 11c2.58 2.976 6.5 3 6.5 3l.82-1.092A10.018 10.018 0 018 20c1.619 1.225 4.063 2.5 8 2.5 3.938 0 6.381-1.275 8-2.5a10.012 10.012 0 01-4.32 2.908L20.5 24s3.92-.024 6.5-3c-.44-7.287-3-11-3-11zm-11.25 9c-.967 0-1.75-.895-1.75-2s.783-2 1.75-2 1.75.895 1.75 2-.783 2-1.75 2zm6.5 0c-.967 0-1.75-.895-1.75-2s.783-2 1.75-2 1.75.895 1.75 2-.783 2-1.75 2z" fill="#FFF" fill-rule="nonzero"></path>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+
